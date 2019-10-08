@@ -12,7 +12,7 @@ def get_param():
     nTrainData = 357
     trainScale = 0.9           # scale of training part and validating part
     learningRate = 0.0001
-    nEpoch = 50
+    nEpoch = 500
     nFrame = 8
     ncpkt = nEpoch
     name = 'Vehicle'
