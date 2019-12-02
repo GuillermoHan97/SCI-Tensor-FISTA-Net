@@ -92,7 +92,7 @@ def build_one_phase(layerxk, layerzk, Phi, PhiT, Yinput):
 
     # xk = rk + ~F(soft(F(rk), softThr))
     xk = tf.add(rk, FFrk)
-    zk = t*xk + (1 - t)*layerxk[-1]
+    zk = (1 + t)*xk  t*layerxk[-1]
 
     # Symmetric constraint
     sFFrk = tf.nn.conv2d(Frk, weight13, strides=[1, 1, 1, 1], padding='SAME')
