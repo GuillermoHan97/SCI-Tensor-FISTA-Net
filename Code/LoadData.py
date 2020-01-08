@@ -1,4 +1,4 @@
-#          Load train data
+#             Load data
 #           Xiaochen  Han
 #            Apr 26 2019
 #    guillermo_han97@sjtu.edu.cn
