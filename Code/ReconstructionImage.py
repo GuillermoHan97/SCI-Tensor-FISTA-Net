@@ -33,7 +33,6 @@ def reconstruct_image(sess, Yinput, prediction, Xinput, Xoutput, testLabel, test
     xinput =np.tile(np.reshape(np.multiply(yinput, sumPhi), [-1, pixel, pixel, 1]), [1, 1, 1, nFrame])     # initialization
     yinput = np.reshape(yinput, (-1, pixel, pixel, 1))                                                     # measurement in correct shape
     feedDict = {Xinput: xinput, Xoutput: xoutput, Yinput: yinput}
-    init = xinput
 
     # do reconstruction
     start = time()
