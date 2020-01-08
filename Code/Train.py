@@ -1,4 +1,4 @@
-#      Train 2st Model of SCI
+#            Train File
 #           Xiaochen  Han
 #            Apr 26 2019
 #    guillermo_han97@sjtu.edu.cn
