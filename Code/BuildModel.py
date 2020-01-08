@@ -109,7 +109,7 @@ def build_fista(Xinput, Phi, PhiT, Yinput, reuse):
     layerSymmetric = []
     transField = []
     layerxk.append(Xinput)                            # x0 = x0
-    layerzk.append(Xinput)                            # y0 = x0
+    layerzk.append(Xinput)                            # z0 = x0
     for i in range(nPhase):
         with tf.variable_scope('conv_%d' % (i), reuse=reuse):
             xk, zk, convSymmetric, field = build_one_phase(layerxk, layerzk, Phi, PhiT, Yinput)
